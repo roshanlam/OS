@@ -7,3 +7,4 @@ As of now this is just a simple OS which will become a really awesome OS for dev
 ## ToDo 
 
 * Integrate Rim with this OS 
+* Have a custom installation process
