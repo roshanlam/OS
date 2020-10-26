@@ -1,3 +1,6 @@
+#include <stdio.h>
+#include <string.h>
+
 #include "kernel.h"
 #include "../cpu/isr.h"
 #include "../drivers/screen.h"
