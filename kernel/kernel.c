@@ -212,6 +212,10 @@ default:
     return 0;
 }
 
+/*
+ * Term - The Terminal For DevOS 
+ * Current Commands - cd, help, exit, history, grep, sizeof
+ */
 
 /* array of builtin function pointers */
 int (*builtin_funcs[])(char **) = {&term_cd, &term_help, &term_exit, &term_history, &term_grep, &args_length };
@@ -223,7 +227,6 @@ char *builtin_str[] = { "cd",  "help", "exit" , "history", "grep", "sizeof" };
 int builtin_funcs_count(){
 	return sizeof(builtin_str) / sizeof(char *);
 }
-
 
 
 /*
