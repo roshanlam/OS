@@ -63,9 +63,10 @@ void kernel(){
     clear_screen();
     isr_install();
     irq_install();
-
-    print("Type Something, it will go through the kernel\n");
-    print("Type END to halt the CPI\n> ");
+// Need To Check if login() works
+//    login();
+//    print("Type Something, it will go through the kernel\n");
+//    print("Type END to halt the CPI\n> ");
 }
 
 void user_input(char *input){
