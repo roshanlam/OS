@@ -42,15 +42,15 @@ void pipe_history_input(char *);
 void printtokens(char **);
 void get_dir(char *);
 void signalHandler();
-int dash_cd(char **);
-int dash_exit(char **);
-int dash_help(char **);
-int dash_grep(char **);
-int dash_launch(char **);
-int dash_execute(char **);
+int term_cd(char **);
+int term_exit(char **);
+int term_help(char **);
+int term_grep(char **);
+int term_launch(char **);
+int term_execute(char **);
 int history_line_count();
-int dash_history();
-int dash_pipe(char **);
+int term_history();
+int term_pipe(char **);
 int args_length(char **);
 char **split_line(char *);
 char *read_line();
@@ -63,9 +63,10 @@ void kernel(){
     clear_screen();
     isr_install();
     irq_install();
-
-    print("Type Something, it will go through the kernel\n");
-    print("Type END to halt the CPI\n> ");
+// Need To Check if login() works
+//    login();
+//    print("Type Something, it will go through the kernel\n");
+//    print("Type END to halt the CPI\n> ");
 }
 
 void user_input(char *input){
